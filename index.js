@@ -3,6 +3,8 @@
 const inquirer = require('inquirer');
 // NEEDED TO CALL THE GENERATE MARKDOWN FUNCTIONS
 const markdown = require('./utils/generateMarkdown')
+// NEEDED TO CALL 
+const fs = require('fs')
 
 // TODO: Create an array of questions for user input
 function promptMe() {
@@ -32,7 +34,7 @@ function promptMe() {
     {
       type: 'input',
       message: 'Please list any and all of your collaborators here:',
-      name: 'collaborators'
+      name: 'credits'
     },
     {
       type:'input',
@@ -45,7 +47,7 @@ function promptMe() {
       name: 'testing'
     },
     {
-      type:'rawlist',
+      type:'list',
       message:'Which license would you like to use?',
       name: 'license',
       choices: [
