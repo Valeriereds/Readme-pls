@@ -51,7 +51,7 @@ function promptMe() {
       message:'Which license would you like to use?',
       name: 'license',
       choices: [
-        'MIT', 'Apache', 'Boost Software', 'The Unlicense', 'Mozilla', 'GNU'
+        'MIT', 'Apache', 'Boost', 'Unlicense', 'Mozilla'
       ],
     },
     {
