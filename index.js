@@ -1,21 +1,12 @@
-// // TODO: Include packages needed for this application
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
+// TODO: Include packages needed for this application
+// NEEDED TO CALL INQUIRER
 const inquirer = require('inquirer');
+// NEEDED TO CALL THE GENERATE MARKDOWN FUNCTIONS
+const markdown = require('./utils/generateMarkdown')
 
+// TODO: Create an array of questions for user input
 function promptMe() {
-
+  
   inquirer
   .prompt([
     {
@@ -45,7 +36,7 @@ function promptMe() {
     },
     {
       type:'input',
-      message:'Please input how your contribution guidelines:',
+      message:'Please input how your want your contribution guidelines:',
       name:'contributions'
     },
     {
@@ -54,7 +45,7 @@ function promptMe() {
       name: 'testing'
     },
     {
-      type:'list',
+      type:'rawlist',
       message:'Which license would you like to use?',
       name: 'license',
       choices: [
@@ -64,7 +55,7 @@ function promptMe() {
     {
       type:'input',
       message:'Please input your Github Username:',
-      name: 'github'
+      name: 'github',
     },
     {
       type:'input',
@@ -77,14 +68,17 @@ function promptMe() {
   );
 }
 
+// TODO: Create a function to write README file
 function writeToFile(info) {
   fs.appendFile('GenerateMe.md', `${info}\n`, (err) =>
-  err ? console.error(err) : console.log('Successfully generated ReadMe!')
+  err ? console.error(err) : console.log('Successfully generated ReadMe file!')
   );
 }
 
+// TODO: Create a function to initialize app
 function init() {
   promptMe()
 }
 
+// Function call to initialize app
 init()
