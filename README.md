@@ -6,6 +6,8 @@ This personalized Readme Generator was in made in the hopes that any amateur cod
 
 ## Usage
 
+![Screenshot of readme generator prompt questions and generated Readme file](<assets/images/Screenshot (63).png>)
+
 To use the personalised README generator, simply open the index.js in the intergrated terminal, run node index.js, and the user should be prompted with a series of questions on what they would like in their README and what each portion of the README should say. When the user is finished, the personalised to them README should be automatically generated, and be able to preview immediately, as shown in the attached screenshot.
 
 ## License

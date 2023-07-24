@@ -19,7 +19,7 @@ function promptMe() {
     {
       type: 'input',
       message: 'What is the description of your project?',
-      name: 'description'
+      name: 'description',
     },
     {
       type: 'input',
@@ -29,17 +29,17 @@ function promptMe() {
     {
       type: 'input',
       message: 'Please provide instructions and examples for use:',
-      name: 'usage'
+      name: 'usage',
     },
     {
       type: 'input',
       message: 'Please list any and all of your collaborators here:',
-      name: 'credits'
+      name: 'credits',
     },
     {
       type:'input',
       message:'Please input how your want your contribution guidelines:',
-      name:'contributions'
+      name:'contributions',
     },
     {
       type:'input',
